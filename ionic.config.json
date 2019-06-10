@@ -1,0 +1,8 @@
+{
+  "name": "pureza-1.00",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
