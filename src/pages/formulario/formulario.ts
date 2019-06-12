@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CepServiceProvider } from '../../providers/cep-service/cep-service';
 
 
 @IonicPage({})
@@ -9,11 +10,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FormularioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  cep:string ="65054530";
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private service: CepServiceProvider ) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad FormularioPage');
+
+   this.getEndereco();
+
+  }
+
+  getEndereco(){
+      this.service.buscarCEP(this.cep).subscribe(data=>{
+        console.log(data);
+      })
   }
 
 }
