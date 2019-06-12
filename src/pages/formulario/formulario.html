@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-navbar color="light">
+    <ion-title>Formulario</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <form novalidate (ngSubmit)="submitForm()">
+
+    <ion-list>
+
+      <ion-row>
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Nome"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Sobre Nome"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-12>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Email"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Tel. Residencial"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Tel. Celular"></ion-input>
+          </ion-item>
+          <br>
+        </ion-col>
+        <ion-col col-12>
+
+          <ion-item-group>
+            <ion-item-divider color="primary">DADOS DE ENTREGA</ion-item-divider>
+          </ion-item-group>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="CEP"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6></ion-col>
+
+        <ion-col col-12>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Endereço"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Nº:"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Bairro"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="Município"></ion-input>
+          </ion-item>
+
+        </ion-col>
+
+        <ion-col col-6>
+
+          <ion-item>
+            <ion-input type="text" placeholder="UF"></ion-input>
+          </ion-item>
+          <br>
+        </ion-col>
+
+
+        <ion-col col-12>
+
+          <button ion-button full color="secondary">
+            <ion-icon name="checkmark"></ion-icon>
+            <span style="padding: 5px">Cadastrar</span>
+          </button>
+
+
+        </ion-col>
+
+
+      </ion-row>
+
+    </ion-list>
+
+  </form>
+
+</ion-content>
